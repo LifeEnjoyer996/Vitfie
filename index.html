@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+
+
+  <title>Login Page</title>
+  <link rel="icon" type="image/png" href="vitfied_logo.png">
+  <style>
+    body {
+      background-image: url(https://media.istockphoto.com/id/872254010/photo/college-university-campus-out-of-focus-background.jpg?s=612x612&w=0&k=20&c=ZPOOfK_8uZ4IFlOgnGw3dOJwLiYUJCDqRP5mjY1LZYk=);
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      max-width: 350px;
+      margin: auto;
+      margin-top: 150px;
+      padding: 20px;
+      position: center;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-family: Bebas Neue;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <img src="vitfied_logo.png" alt="logo" class="logo">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script> const form = document.querySelector('form');
+    const usernameInput = document.querySelector('#username');
+    const passwordInput = document.querySelector('#password');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+
+      if (username === 'VIT_STUDENT' && password === '1234') {
+        window.location.href = "A1.html";
+      }
+
+      else if (username === 'sanket.palkar' && password === '12211577') {
+        window.location.href = "A1.html";
+      }
+      else if (username === 'saniya.bhattad' && password === '12211700') {
+        window.location.href = "A1.html";
+
+      }
+      else if (username === 'siddhi.sangwai' && password === '12211678') {
+        window.location.href = "A1.html";
+
+      }
+      else if (username === 'shruti.saswade' && password === '12211009') {
+        window.location.href = "A1.html";
+      }
+      else if (username === 'anushri.sapate' && password === '12211777') {
+        window.location.href = "A1.html";
+      }
+      else if (username === 'ruta.sapate' && password === '12210930') {
+        window.location.href = "A1.html";
+      }
+      else if (username === 'svpalkar123@gmail.com' && password === '9422940546') {
+        window.location.href = "A1.html";
+      }
+
+      else {
+        alert('Invalid username or password');
+      }
+    });
+  </script>
+</body>
+
+</html>
